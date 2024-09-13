@@ -15,6 +15,7 @@ public class Main {
         String modeloCarro = scanner.nextLine(); // Lê o modelo do carro
 
         int anoCarro = 0; // Variável para armazenar a entrada do usuário
+        
         while (true) {
             try {
                 System.out.print("Ano: ");
@@ -28,6 +29,7 @@ public class Main {
         }
 
         int numeroDePortas = 0; // Variável para armazenar a entrada do usuário
+        
         while (true) {
             try {
                 System.out.print("Número de portas: ");
