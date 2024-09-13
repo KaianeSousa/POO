@@ -22,6 +22,7 @@ public class Main {
                 anoCarro = scanner.nextInt(); // Lê o ano do carro
                 scanner.nextLine(); // // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
+                
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um valor inteiro para o ano.");
                 scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
