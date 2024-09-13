@@ -20,11 +20,11 @@ public class Main {
             try {
                 System.out.print("Ano: ");
                 anoCarro = scanner.nextInt(); // Lê o ano do carro
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um valor inteiro para o ano.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -34,12 +34,12 @@ public class Main {
             try {
                 System.out.print("Número de portas: ");
                 numeroDePortas = scanner.nextInt(); // Lê o número de portas
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); //Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para o número de portas.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -59,12 +59,12 @@ public class Main {
             try {
                 System.out.print("Ano: ");
                 anoMoto = scanner.nextInt(); // Lê o ano da moto
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para o ano.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -74,12 +74,12 @@ public class Main {
             try {
                 System.out.print("Cilindradas (em centímetros cúbicos): ");
                 cilindradas = scanner.nextInt(); // Lê a capacidade do motor em cilindradas
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para as cilindradas.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -99,12 +99,12 @@ public class Main {
             try {
                 System.out.print("Ano: ");
                 anoCaminhao = scanner.nextInt(); // Lê o ano do caminhão
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para o ano.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -114,12 +114,12 @@ public class Main {
             try {
                 System.out.print("Capacidade de carga (em toneladas): ");
                 capacidadeCarga = scanner.nextDouble(); // Lê a capacidade de carga
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número decimal para a capacidade de carga.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -139,12 +139,12 @@ public class Main {
             try {
                 System.out.print("Ano: ");
                 anoOnibus = scanner.nextInt(); // Lê o ano do ônibus
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
                 break; // Sai do loop se a entrada for válida
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para o ano.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -158,7 +158,7 @@ public class Main {
                 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Por favor, insira um número inteiro para a capacidade de passageiros.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); // Limpa o scanner para evitar quebra de linha
             }
         }
 
@@ -189,7 +189,8 @@ public class Main {
 
         System.out.println("Movendo os veículos:");
         for (Veiculo veiculo : veiculos) {
-            veiculo.mover(); // Chama o método mover() de cada veículo
+            // Chama o método mover() de cada veículo
+            veiculo.mover(); 
         }
 
         // Fecha o scanner para liberar os recursos
