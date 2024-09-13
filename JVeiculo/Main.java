@@ -164,9 +164,8 @@ public class Main {
 
         // Cria um objeto Ônibus com os dados fornecidos
         Onibus onibus = new Onibus(marcaOnibus, modeloOnibus, anoOnibus, capacidadePassageiros);
-
-        // Exibe os detalhes de cada veículo
-        // Exibe os detalhes de cada veículo
+        
+        // Exibe os detalhes de cada veículo (Carro, Moto, Caminhão e Ônibus)
         System.out.println("\nDetalhes do Carro:");
         carro.exibirDetalhes(); // Mostra os detalhes do carro
         System.out.println();
